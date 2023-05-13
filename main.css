@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root {
+    --Primary-Color : #18ADFF;
+    --Secondary-Color: #9a9a9a;
+    --Primary-Font: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eaeaea;
+    color: gray;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header {
+    width: 450px;
+    height: 150px;
+    background: var(--Primary-Color);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.Header-Title {
+    color: white;
+    font-family: var(--Primary-Font);
+    text-align: center;
+}
+
+.Notification-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: var(--Primary-Font);
+    color: var(--Secondary-Color);
+}
+
+.Notification {
+    width: 150px;
+    height: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.List-Container {
+    margin-top: 20px;
+    width: 450px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.List-Item {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--Secondary-Color);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 80px;
+} 
+
+.List-Text {
+    word-wrap: break-word;
+    width: 380px;
+}
+
+.Input-Container {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Input-List {
+    width: 410px;
+    height: 50px;
+    border: 2px solid var(--Secondary-Color);
+    outline: none;
+    border-radius: 30px;
+    padding-left: 30px;
+}
+
+.Icon:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.Icon {
+    width: 25px;
+}
